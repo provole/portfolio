@@ -119,7 +119,7 @@ export default function Projects() {
                             </div>
                             <p className="text-sm mb-5 mt-2">
                                 Developed a modern marketing website for Pragmatic Digital, a web development agency.
-                                Built with React and Next.js, using Headless WordPress as a content management system, the site delivers a clean design, optimized performance, and a flexible content structure for seamless updates. Focused on showcasing the agency's services, projects, and team, the site provides a polished and professional web presence.
+                                Built with React and Next.js, using Headless WordPress as a content management system, the site delivers a clean design, optimized performance, and a flexible content structure for seamless updates. Focused on showcasing the agency&apos;s services, projects, and team, the site provides a polished and professional web presence.
                             </p>
                             <ul className="flex flex-wrap gap-x-2 gap-y-3">
                                 <li className="bg-green-500/10 text-green px-4 py-1.5 text-xs rounded-full">WordPress</li>

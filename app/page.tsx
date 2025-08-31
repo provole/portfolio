@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Sidebar from "./components/Sidebar";
 import ScrollSpyWrapper from "./components/ScrollSpyWrapper";
 import About from "./components/About";
 import Experience from "./components/Experience";
