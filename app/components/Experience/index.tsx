@@ -81,13 +81,15 @@ export default function Experience() {
             <div className="mt-8 pl-0 md:pl-3">
 
                 <div className="flex items-center gap-2 group">
-                    <Link
-                        href="/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white group-hover:text-green-500 transition-colors duration-300 ease-in-out tracking-wide">
-                        View Full Résumé
-                    </Link>
+                <Link
+                    href="/Volen_Angelov_CV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white group-hover:text-green-500 transition-colors duration-300 ease-in-out tracking-wide"
+                    >
+                    View Full Résumé
+                </Link>
+
                     <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300 ease-in-out">
                         <CgArrowTopRight className="group-hover:text-green-500" />
                     </div>
