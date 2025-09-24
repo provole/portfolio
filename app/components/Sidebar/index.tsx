@@ -32,7 +32,7 @@ export default function Sidebar({ sections, activeSection, onSectionClick }: Sid
                             key={section.id}
                             onClick={() => onSectionClick(section.id)}
                             className={`group flex items-center w-full text-left py-2 transition-colors uppercase tracking-wider text-sm ${activeSection === section.id
-                                ? 'text-accent dark:text-accent font-semibold'
+                                ? 'text-green-200 dark:text-accent font-semibold'
                                 : 'text-foreground-light hover:text-heading'
                                 }`}
                         >
