@@ -8,11 +8,19 @@ const config: Config = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'foreground-light': "var(--foreground-light)",
+        accent: "var(--accent)",
+        'accent-light': "var(--accent-light)",
+        surface: "var(--surface)",
+        'surface-elevated': "var(--surface-elevated)",
+        border: "var(--border)",
+        heading: "var(--heading)",
         gray: {
           50: "#F9FAFB",
           100: "#F3F4F6",

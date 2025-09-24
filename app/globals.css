@@ -3,14 +3,40 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #fefcfb;
+  --foreground: #334155;
+  --foreground-light: #64748b;
+  --accent: #10b981;
+  --accent-light: #d1fae5;
+  --surface: #ffffff;
+  --surface-elevated: #f8fafc;
+  --border: #e2e8f0;
+  --heading: #1e293b;
+}
+
+.dark {
+  --background: #0f172a;
   --foreground: #94a3b8;
+  --foreground-light: #64748b;
+  --accent: #5eeabf;
+  --accent-light: rgba(94, 234, 191, 0.1);
+  --surface: #1e293b;
+  --surface-elevated: #334155;
+  --border: #334155;
+  --heading: #f1f5f9;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light) {
     --background: #0f172a;
     --foreground: #94a3b8;
+    --foreground-light: #64748b;
+    --accent: #5eeabf;
+    --accent-light: rgba(94, 234, 191, 0.1);
+    --surface: #1e293b;
+    --surface-elevated: #334155;
+    --border: #334155;
+    --heading: #f1f5f9;
   }
 }
 
@@ -28,6 +54,16 @@ body {
 }
 
 ::selection {
-  background: #5eeabf;
+  background: var(--accent);
+  color: white;
+}
+
+.light ::selection {
+  background: var(--accent);
+  color: white;
+}
+
+.dark ::selection {
+  background: var(--accent);
   color: #111212;
 }
