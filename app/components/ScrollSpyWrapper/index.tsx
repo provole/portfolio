@@ -46,16 +46,16 @@ export default function ScrollSpyWrapper({ children }: ScrollSpyWrapperProps) {
   }
 
   return (
-    <div className="container max-w-6xl mx-auto px-4 relative">
+    <div className="container max-w-7xl mx-auto px-4 relative">
       <div className="flex flex-col md:flex-row gap-10 md:gap-6 lg:gap-12">
-        <div className="w-full md:w-[30%] lg:w-[48%]">
+        <div className="w-full md:w-[30%] lg:w-[40%]">
           <Sidebar
             sections={sections}
             activeSection={activeSection}
             onSectionClick={scrollToSection}
           />
         </div>
-        <main className="w-full md:w-[70%] lg:w-[52%] space-y-16">
+        <main className="w-full md:w-[70%] lg:w-[60%] space-y-16">
           {children}
         </main>
       </div>

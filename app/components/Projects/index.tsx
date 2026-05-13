@@ -1,14 +1,136 @@
+"use client";
 import Link from "next/link";
+import { useRef } from "react";
 import { CgArrowTopRight } from "react-icons/cg";
 import Image from "next/image";
 import wordle from "@/public/wordle.png";
 import globalhub from "@/public/globalhub.png";
 import pd from "@/public/pd.png";
 import ejaarent from "@/public/ejaarent.png";
+import flight from "@/public/flight-tracker.png"
+import undernda from "@/public/undernda.png"
 
 export default function Projects() {
+    const flightVideoRef = useRef<HTMLVideoElement>(null);
+    const underndaVideoRef = useRef<HTMLVideoElement>(null);
+
     return (
         <section id="projects" className="pt-16 md:pt-26 pb-32 !mt-0">
+            <p className="block md:hidden text-gray-100 mb-2 tracking-wider font-bold">PROJECTS</p>
+            <Link
+                href="https://flight-tracker-uqgr.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+            >
+                <div
+                    className="flex flex-col sm:flex-row items-start gap-6 rounded-lg md:hover:bg-green-500/5 py-6 px-0 md:px-4 transition-all duration-300 ease-in-out group cursor-pointer hover:shadow-lg"
+                    onMouseEnter={() => flightVideoRef.current?.play()}
+                    onMouseLeave={() => {
+                        if (flightVideoRef.current) {
+                            flightVideoRef.current.pause();
+                            flightVideoRef.current.currentTime = 0;
+                        }
+                    }}
+                >
+                    <div className="w-full sm:w-1/4 relative">
+                        <Image
+                            className="w-full h-full rounded-lg group-hover:opacity-0 transition-opacity duration-300 min-h-[120px] object-cover"
+                            src={flight}
+                            alt=""
+                            width="600"
+                            height="600"
+                        />
+                        <video
+                            ref={flightVideoRef}
+                            className="absolute inset-0 w-full h-full rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 min-h-[120px] object-cover"
+                            loop
+                            muted
+                            playsInline
+                        >
+                            <source src="/flight.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div className="w-full sm:w-3/4">
+                        <div className="rounded-lg">
+                            <div className="flex items-center gap-2">
+                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+                                    Flight Tracker
+                                </p>
+                                <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
+                                    <CgArrowTopRight />
+                                </div>
+                            </div>
+                            <p className="text-sm mb-5 mt-2">
+                                A real-time flight tracking application that lets users search for and monitor live flights, displaying route, altitude, speed, and status data fetched from an aviation REST API.
+                            </p>
+                            <ul className="flex flex-wrap gap-x-2 gap-y-3">
+                                <li className="bg-green-200 dark:bg-green-200 dark:bg-green-500/10 text-green px-4 py-1.5 text-xs rounded-full">Next.js</li>
+                                <li className="bg-green-200 dark:bg-green-200 dark:bg-green-500/10 text-green px-4 py-1.5 text-xs rounded-full">TypeScript</li>
+                                <li className="bg-green-200 dark:bg-green-200 dark:bg-green-500/10 text-green px-4 py-1.5 text-xs rounded-full">REST API</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </Link>
+
+            <Link
+                href="https://undernda.agency/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+            >
+                <div
+                    className="flex flex-col sm:flex-row items-start gap-6 rounded-lg md:hover:bg-green-500/5 py-6 px-0 md:px-4 transition-all duration-300 ease-in-out group cursor-pointer hover:shadow-lg"
+                    onMouseEnter={() => underndaVideoRef.current?.play()}
+                    onMouseLeave={() => {
+                        if (underndaVideoRef.current) {
+                            underndaVideoRef.current.pause();
+                            underndaVideoRef.current.currentTime = 0;
+                        }
+                    }}
+                >
+                    <div className="w-full sm:w-1/4 relative">
+                        <Image
+                            className="w-full h-full rounded-lg group-hover:opacity-0 transition-opacity duration-300 min-h-[120px] object-cover"
+                            src={undernda}
+                            alt=""
+                            width="600"
+                            height="600"
+                        />
+                        <video
+                            ref={underndaVideoRef}
+                            className="absolute inset-0 w-full h-full rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 min-h-[120px] object-cover"
+                            loop
+                            muted
+                            playsInline
+                        >
+                            <source src="/undernda.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div className="w-full sm:w-3/4">
+                        <div className="rounded-lg">
+                            <div className="flex items-center gap-2">
+                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+                                    underNDA
+                                </p>
+                                <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
+                                    <CgArrowTopRight />
+                                </div>
+                            </div>
+                            <p className="text-sm mb-5 mt-2">
+                                Designed and built the agency website for underNDA, a creative digital agency. The site showcases their services, portfolio, and team with a bold, modern aesthetic built for performance and impact.
+                            </p>
+                            <ul className="flex flex-wrap gap-x-2 gap-y-3">
+                                <li className="bg-green-200 dark:bg-green-200 dark:bg-green-500/10 text-green px-4 py-1.5 text-xs rounded-full">Next.js</li>
+                                <li className="bg-green-200 dark:bg-green-200 dark:bg-green-500/10 text-green px-4 py-1.5 text-xs rounded-full">TypeScript</li>
+                                <li className="bg-green-200 dark:bg-green-200 dark:bg-green-500/10 text-green px-4 py-1.5 text-xs rounded-full">TailwindCSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </Link>
+
             <p className="block md:hidden text-gray-100 mb-2 tracking-wider font-bold">PROJECTS</p>
             <Link
                 href="https://wordle-three-livid.vercel.app/"
@@ -29,7 +151,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-green-200 group-hover:text-green transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     Wordle
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
@@ -69,7 +191,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-green-200 group-hover:text-green transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     GlobalHub
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
@@ -110,7 +232,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-green-200 group-hover:text-green transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     Pragmatic Digital
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
@@ -152,7 +274,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-green-200 group-hover:text-green transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     Ejaarent
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
