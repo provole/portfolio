@@ -18,7 +18,7 @@ interface SidebarProps {
 
 export default function Sidebar({ sections, activeSection, onSectionClick }: SidebarProps) {
     return (
-        <aside className="dark:shadow-lg sticky top-0 md:h-screen py-8 md:py-24 flex flex-col justify-between">
+        <aside className="sticky top-0 md:h-screen py-8 md:py-24 flex flex-col justify-between">
             <div>
                 <div className="mb-8">
                     <h1 className="text-heading font-bold text-4xl md:text-4xl">Volen Angelov</h1>
