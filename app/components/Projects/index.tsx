@@ -54,7 +54,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 hover:text-green-200 group-hover:text-green-200 dark:text-white dark:group-hover:text-white/70 dark:hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     Flight Tracker
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
@@ -111,7 +111,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 hover:text-green-200 group-hover:text-green-200 dark:text-white dark:group-hover:text-white/70 dark:hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     underNDA
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
@@ -151,7 +151,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 hover:text-green-200 group-hover:text-green-200 dark:text-white dark:group-hover:text-white/70 dark:hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     Wordle
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
@@ -191,7 +191,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 hover:text-green-200 group-hover:text-green-200 dark:text-white dark:group-hover:text-white/70 dark:hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     GlobalHub
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
@@ -232,7 +232,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 hover:text-green-200 group-hover:text-green-200 dark:text-white dark:group-hover:text-white/70 dark:hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     Pragmatic Digital
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
@@ -274,7 +274,7 @@ export default function Projects() {
                     <div className="w-full sm:w-3/4">
                         <div className="rounded-lg">
                             <div className="flex items-center gap-2">
-                                <p className="text-green-200 dark:text-white group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+                                <p className="text-green-200 hover:text-green-200 group-hover:text-green-200 dark:text-white dark:group-hover:text-white/70 dark:hover:text-white/70 transition-colors duration-300 ease-in-out">
                                     Ejaarent
                                 </p>
                                 <div className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-green-200 dark:group-hover:text-green transition-transform duration-300 ease-in-out">
